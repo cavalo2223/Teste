@@ -1,0 +1,17 @@
+- name: Configure o ambiente Node.js
+  usa: actions/setup-node@v2.1.2
+  com:
+    # Definir always-auth em npmrc
+    always-auth: # opcional, o padrão é falso
+    # Especificação da versão a ser usada. Exemplos: 12.x, 10.15.1,> = 10.15.0
+    versão do nó: # opcional
+    # Defina esta opção se quiser que a ação verifique a versão mais recente disponível que atenda às especificações de versão
+    verificar mais recente: # opcional
+    # Registro opcional para configurar para autenticação. Irá definir o registro em um arquivo de nível de projeto .npmrc e .yarnrc e configurar a autenticação para ler de env.NODE_AUTH_TOKEN
+    url-registro: # opcional
+    # Escopo opcional para autenticação em registros com escopo
+    escopo: # opcional
+    # Usado para obter distribuições de nós de versões de nós. Como há um padrão, ele normalmente não é fornecido pelo usuário.
+    token: # opcional, o padrão é $ {{github.token}}
+    # Descontinuada. Em vez disso, use a versão do nó. Não será mais compatível após 1º de outubro de 2019
+    versão: # opcional
